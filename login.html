@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.1/mdb.min.css" rel="stylesheet" />
+    <title>Formulário</title>
+</head>
+
+<body style="background-color: lightgray">
+
+    <h1 style="margin-left: 10px;">
+        Primeiro Passo:
+    </h1>
+
+    <form id="formLogin">
+        <div>
+            <div style="margin-left: 40px; background-color: white; border-radius: 10px; margin-top: 10px; margin-right: 40px; padding-left: 0px; padding-bottom: 40px; padding-top: 0px;">
+                <h4 style=" background-color: rgb(197, 194, 194); padding-top: 15px; padding-left: 10px; padding-bottom: 20px; ">Dados de Login</h4>
+                <div style="margin-left: 10px;">
+                    <div class="col-md-3 mb-3 ">
+                        <div>
+                            <label class="form-label " for="txtCpf ">CPF:</label>
+                            <input type="text " name="txtCpf " id="txtCpf" class="form-control cpf-mask" placeholder="___.____.____-__ " />
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div class="col-md-3 mb-3">
+                            <div>
+                                <label class="form-label " for="txtEmail ">Email:</label>
+                                <input type="text " name="txtEmail " id="txtEmail" class="form-control" />
+                            </div>
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <div>
+                                <label class="form-label " for="txtConfirmaEmail ">Confirmar Email:</label>
+                                <input type="text " name="txtConfirmaEmail " id="txtConfirmaEmail" class="form-control" />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-2 mb-3">
+                                <label for="txtSenha" class="form-label">Senha:</label>
+                                <input type="password" id="txtSenha" class="form-control" aria-describedby="passwordHelpBlock">
+                            </div>
+                            <div class="col-md-2 mb-3">
+                                <label for="txtConfirmaSenha" class="form-label">Confirma Senha:</label>
+                                <input type="password" id="txtConfirmaSenha" class="form-control" aria-describedby="passwordHelpBlock">
+                            </div>
+                        </div>
+                        <div>
+                            <button type="button" class="btn btn-primary" id="btnContinua">Continuar</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </form>
+
+</body>
+
+<script type="text/javascript " src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.1/mdb.min.js "></script>
+<script type="text/javascript" src="login.js"></script>
+
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.1/mdb.min.css" rel="stylesheet" />
+    <title>Formulário</title>
+</head>
+
+<body style="background-color: lightgray">
+
+    <h1 style="margin-left: 10px;">
+        Segundo Passo:
+    </h1>
+
+    <form id="formContato">
+        <div style="margin-left: 40px; background-color: white; border-radius: 10px; margin-top: 10px; margin-right: 40px; padding-left: 0px; padding-bottom: 20px; padding-top: 0px; ">
+            <h4 style="background-color: rgb(197, 194, 194); padding-top: 15px; padding-left: 10px; padding-bottom: 10px; ">Dados de Contato</h4>
+            <div style="margin-left: 10px;">
+                <div class="row ">
+                    <div class="col-md-5 mb-3 ">
+                        <label class="form-label " for="txtNome ">Nome:</label>
+                        <input type="text " name="txtNome" id="txtNome" class="form-control" maxlength="20 " />
+                    </div>
+                    <div class="col-md-5 mb-3 ">
+                        <label class="form-label " for="txtSobrenome">Sobrenome:</label>
+                        <input type="text " name="txtSobrenome" id="txtSobrenome" class="form-control" maxlength="20 " />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 mb-3 ">
+                        <label class="form-label " for="txtDataNasc">Nascimento:</label>
+                        <input type="text " name="txtDataNasc" id="txtDataNasc" class="form-control" />
+                    </div>
+                    <div class="col-md-4 mb-3 ">
+                        <div>
+                            <label class="form-label " for="txtRG">RG:</label>
+                            <input type="text " name="txtRG" id="txtRG" class="form-control " />
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3 ">
+                        <div>
+                            <label class="form-label " for="selSex">Sexo:</label>
+                            <select class="form-select" id="selSex">
+                            <option value="" selected disabled >Selecione o Sexo:</option>
+                            <option value="1">Masculino</option>
+                            <option value="2">Feminino</option>
+                            <option value="3">Outro</option>
+                        </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 mb-3 ">
+                        <label class="form-label " for="txtCEP">CEP:</label>
+                        <input type="text " name="txtCEP" id="txtCEP" class="form-control" />
+                    </div>
+                    <div class="col-md-5 mb-3">
+                        <label class="form-label " for="txtEnd">Endereço:</label>
+                        <input type="text " name="txtEnd" id="txtEnd" class="form-control" />
+                    </div>
+                    <div class="col-md-1 mb-3 ">
+                        <label class="form-label " for="txtN">Nº:</label>
+                        <input type="text " name="txtN" id="txtN" class="form-control" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 mb-3">
+                        <label class="form-label " for="txtBairro">Bairro:</label>
+                        <input type="text " name="txtBairro" id="txtBairro" class="form-control" />
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label class="form-label " for="txtComplemento">Complemento:</label>
+                        <input type="text " name="txtComplemento" id="txtComplemento" class="form-control" />
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label class="form-label " for="txtCid">Cidade:</label>
+                        <input type="text " name="txtCid" id="txtCid" class="form-control" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 mb-3">
+                        <label class="form-label " for="selEst">Estado:</label>
+                        <select class="form-select" id="selEst">
+                        <option value="" selected disabled>Selecione o estado:</option>
+                        <option value="1">SP</option>
+                        <option value="2">RJ</option>
+                        <option value="3">AM</option>
+                        <option value="4">BH</option>
+                        <option value="5">ES</option>
+                    </select>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <label class="form-label " for="txtTel">DDD+Telefone:</label>
+                        <input type="text " name="txtTel" id="txtTel" class="form-control" />
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <label class="form-label " for="txtCel">DDD+Celular:</label>
+                        <input type="text " name="txtCel" id="txtCel" class="form-control" />
+                    </div>
+                </div>
+
+                <div>
+                    <button type="button" class="btn btn-primary" id="btnFinaliza">Finalizar</button>
+                </div>
+
+            </div>
+        </div>
+
+    </form>
+
+</body>
+
+<script type="text/javascript " src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.1/mdb.min.js "></script>
+<script type="text/javascript" src="contato.js"></script>
+
+</html>
